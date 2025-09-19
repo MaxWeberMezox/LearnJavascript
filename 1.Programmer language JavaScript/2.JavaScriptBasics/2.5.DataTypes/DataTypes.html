@@ -6,13 +6,29 @@
 </head>
 <body>
 <script>
-    let name = "Ілля";
+    let name = "Ілля";  // string
+    let num = 123;   // number
+    let bigNum = 123n;   // bigInt
+    let bool = true;   // boolean
+    let nul = null;   //  null
+    let undf;   //  undefined
+    let symbol = Symbol('id');   //  symbol
+    let obj = {name: 'Alex'};   //  obejct
 
-    alert( `привіт ${1}` ); // привіт 1
+    console.log(typeof name);
+    console.log(typeof num);
+    console.log(typeof bigNum);
+    console.log(typeof bool);
+    console.log(typeof nul);    //  Офіційно визнана помилка поведінки typeof, виведе object
+    console.log(typeof undf);
+    console.log(typeof symbol);
+    console.log(typeof obj);
+    console.log(typeof alert);  //  alert це функція, в javascript немає спеціального типу, виведе function, хоча має бути object
 
-    alert( `привіт ${"name"}` ); // привіт name
 
-    alert( `привіт ${name}` ); // привіт Ілля
+    console.log(`привіт ${1}`); // привіт 1
+    console.log(`привіт ${"name"}`); // привіт name
+    console.log(`привіт ${name}`); // привіт Ілля
 </script>
 </body>
 </html>
